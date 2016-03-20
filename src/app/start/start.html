@@ -1,0 +1,19 @@
+<div class="start">
+  <form ng-submit="startCtrl.login(startCtrl.device.id, startCtrl.device.password)">
+    <div class="row">
+      <div class="columns medium-6 medium-centered text-center">
+        <label>
+          {{ 'START.FIELDS.DEVICE_ID.LABEL' | translate }}
+          <input id="device-id" name="device-id" ng-model="startCtrl.device.id" type="text" required="required"></input>
+        </label>
+
+        <label>
+          {{ 'START.FIELDS.DEVICE_PASSWORD.LABEL' | translate }}
+          <input id="device-password" name="device-password" ng-model="startCtrl.device.password" type="password" required="required"></input>
+        </label>
+
+        <button type="submit">{{ 'START.SUBMIT.TEXT' | translate }}</button>
+      </div>
+    </div>
+  </form>
+</div>

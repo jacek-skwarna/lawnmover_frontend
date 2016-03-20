@@ -1,0 +1,16 @@
+<div class="topbar">
+  <nav class="top-bar" data-topbar role="navigation">
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+      <div class="battery left">
+        <h1><a ui-sref="start">{{ 'TOPBAR.HEADER' | translate }} | {{ 'TOPBAR.DEVICE_ID' | translate }}: {{ topbarCtrl.device.id }}</a></h1>
+        <i class="fi-battery-full battery-icon" title="{{ 'TOPBAR.BATTERY' | translate }}"></i> <span class="battery-level">95%</span>
+      </div>
+
+      <!-- Right Nav Section -->
+      <div class="right">
+        <button class="disconnect">{{ 'TOPBAR.DISCONNECT' | translate }}</button>
+      </div>
+    </section>
+  </nav>
+</div>

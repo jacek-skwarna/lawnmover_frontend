@@ -1,0 +1,41 @@
+{
+  "START": {
+    "FIELDS": {
+      "DEVICE_ID": {
+        "LABEL": "ID urządzenia"
+      },
+      "DEVICE_PASSWORD": {
+        "LABEL": "Hasło"
+      }
+    },
+    "SUBMIT": {
+      "TEXT": "Podłącz urządzenie"
+    }
+  },
+  "CAMERA": {
+    "FRONT": {
+      "HEADER": "Przód"
+    },
+    "REAR": {
+      "HEADER": "Tył"
+    },
+    "CHOOSE": {
+      "HEADER": "Przełącz kamerę"
+    }
+  },
+  "SETTINGS": {
+    "HEADER": "Ustawienia",
+    "BLADES": {
+      "HEADER": "Noże"
+    },
+    "LIGHTS": {
+      "HEADER": "Światła"
+    }
+  },
+  "TOPBAR": {
+    "HEADER": "Kosiarka",
+    "DEVICE_ID": "ID",
+    "BATTERY": "Akumulator",
+    "DISCONNECT": "Odłącz"
+  }
+}

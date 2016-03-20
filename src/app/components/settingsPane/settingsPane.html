@@ -1,0 +1,29 @@
+<section class="settings-pane columns small-3">
+  <h2>Ustawienia</h2>
+
+  <div class="settings-pane-controller blades row">
+    <div class="columns small-6">{{ 'SETTINGS.BLADES.HEADER' | translate }}</div>
+
+    <div class="columns small-6 switch text-right">
+      <input class="switch-input" id="bladesSwitch" type="checkbox" name="bladesSwitch">
+      <label class="switch-paddle" for="bladesSwitch">
+        <span class="show-for-sr">{{ 'SETTINGS.BLADES.HEADER' | translate }}</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="settings-pane-controller lights row">
+    <div class="columns small-6">{{ 'SETTINGS.LIGHTS.HEADER' | translate }}</div>
+
+    <div class="columns small-6 switch text-right">
+      <input class="switch-input" id="lightsSwitch" type="checkbox" name="lightsSwitch">
+      <label class="switch-paddle" for="lightsSwitch">
+        <span class="show-for-sr">{{ 'SETTINGS.LIGHTS.HEADER' | translate }}</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="acceleration">
+    <input type="range" min="1" max="100" step="1">
+  </div>
+</section>

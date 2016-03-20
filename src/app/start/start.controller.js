@@ -3,10 +3,10 @@
 
   angular
     .module('lawnmoverFrontend')
-    .controller('MainController', MainController);
+    .controller('StartController', StartController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function StartController($timeout, webDevTec, toastr) {
     var vm = this;
 
     vm.awesomeThings = [];

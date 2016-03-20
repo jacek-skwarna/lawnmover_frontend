@@ -1,0 +1,17 @@
+<section class="cameras columns small-6 text-center">
+  <h2>{{ 'CAMERA.' + camerasCtrl.activeCamera + '.HEADER' | translate }}</h2>
+
+  <div class="camera">
+    <div class="flex-video">
+      <iframe src="https://www.youtube.com/embed/V9gkYw35Vws" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <form>
+    <div class="camera-switch">
+      <label>{{ 'CAMERA.CHOOSE.HEADER' | translate }}</label>
+      <input type="radio" name="camera-switch" value="front" id="camera-front" checked="checked"><label for="camera-front">{{ 'CAMERA.FRONT.HEADER' | translate }}</label>
+      <input type="radio" name="camera-switch" value="rear" id="camera-rear"><label for="camera-rear">{{ 'CAMERA.REAR.HEADER' | translate }}</label>
+    </div>
+  </form>
+</section>

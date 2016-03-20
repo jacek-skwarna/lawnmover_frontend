@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('lawnmoverFrontend', ['ngAnimate', 'ngTouch', 'ui.router', 'ngMaterial', 'toastr']);
+    .module('lawnmoverFrontend', ['ngAnimate', 'ngTouch', 'ui.router', 'toastr', 'translate', 'panel']);
 
 })();

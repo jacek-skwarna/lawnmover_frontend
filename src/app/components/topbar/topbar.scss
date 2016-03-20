@@ -1,0 +1,40 @@
+.topbar {
+  color: #fff;
+
+  h1 {
+    display: inline-block;
+    font-size: 0.8em;
+    line-height: 2;
+    margin: 0 1em 0 0;
+    position: relative;
+    top: -4px;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .battery {
+    padding-left: 1em;
+  }
+
+  .battery-icon {
+    font-size: 1.5em;
+  }
+
+  .battery-level {
+    line-height: 2;
+    margin-left: 3px;
+    position: relative;
+    top: -3px;
+  }
+
+  .disconnect {
+    position: static;
+  }
+
+  .right {
+    line-height: 2.5;
+    padding-right: 1em;
+  }
+}

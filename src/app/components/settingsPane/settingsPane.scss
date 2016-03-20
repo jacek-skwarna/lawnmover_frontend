@@ -1,0 +1,32 @@
+.settings-pane {
+  h2 {
+    font-size: 1em;
+  }
+
+  .settings-pane-controller {
+    font-size: 0.8em;
+  }
+
+  .switch {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+    label {
+      height: 1.5rem;
+      width: 3rem;
+
+      &:after {
+        height: 1rem;
+        width: 1rem;
+      }
+    }
+
+    input:checked + label:after {
+      left: 1.7rem;
+    }
+  }
+
+  .acceleration {
+    margin-top: 2em;
+  }
+}

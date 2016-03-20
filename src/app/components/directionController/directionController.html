@@ -1,0 +1,26 @@
+<section class="direction-controller columns small-3">
+  {{ directionControllerCtrl.counter }}
+  <div class="arrows">
+    <div class="row">
+      <div class="columns text-center">
+        <i class="fi-arrow-up"></i>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="columns small-6 text-left">
+        <a ng-mousedown="directionControllerCtrl.turnLeft()" ng-mouseup="directionControllerCtrl.turnStop()" ng-mouseleave="directionControllerCtrl.turnStop()"><i class="fi-arrow-left"></i></a>
+      </div>
+
+      <div class="columns small-6 text-right">
+        <i class="fi-arrow-right"></i>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="columns text-center">
+        <i class="fi-arrow-down"></i>
+      </div>
+    </div>
+  </div>
+</section>
