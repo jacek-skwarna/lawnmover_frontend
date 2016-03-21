@@ -11,23 +11,38 @@
     var turningInterval;
 
     vm.turnLeft = turnLeft;
+    vm.turnRight = turnRight;
     vm.turnStop = turnStop;
+    vm.moveForward = moveForward;
+    vm.moveBack = moveBack;
     vm.counter = 0;
 
     ///////////
     function turnLeft() {
+      turnStop();
       turningInterval = $interval(function() {
-        $log.log('left: ' + vm.counter);
         vm.counter -= 1;
       }, 500);
     }
 
+    function turnRight() {
+      turnStop();
+      turningInterval = $interval(function() {
+        vm.counter += 1;
+      }, 500);
+    }
+
     function turnStop() {
-      //$log.log('turnStop');
-      alert('turnStop');
       $interval.cancel(turningInterval);
     }
 
+    function moveForward() {
+
+    }
+
+    function moveBack() {
+
+    }
 
   }
 })();

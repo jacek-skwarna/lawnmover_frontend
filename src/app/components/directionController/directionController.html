@@ -2,23 +2,31 @@
   {{ directionControllerCtrl.counter }}
   <div class="arrows">
     <div class="row">
-      <div class="columns text-center">
+      <div class="columns text-center" ng-click="directionControllerCtrl.moveForward()">
         <i class="fi-arrow-up"></i>
       </div>
     </div>
 
     <div class="row">
-      <div class="columns small-6 text-left">
-        <a ng-mousedown="directionControllerCtrl.turnLeft()" ng-mouseup="directionControllerCtrl.turnStop()" ng-mouseleave="directionControllerCtrl.turnStop()"><i class="fi-arrow-left"></i></a>
+      <div
+        class="columns small-6 text-left"
+        ng-touchstart="directionControllerCtrl.turnLeft()"
+        ng-touchend="directionControllerCtrl.turnStop()"
+      >
+        <i class="fi-arrow-left"></i>
       </div>
 
-      <div class="columns small-6 text-right">
+      <div
+        class="columns small-6 text-right"
+        ng-touchstart="directionControllerCtrl.turnRight()"
+        ng-touchend="directionControllerCtrl.turnStop()"
+      >
         <i class="fi-arrow-right"></i>
       </div>
     </div>
 
     <div class="row">
-      <div class="columns text-center">
+      <div class="columns text-center" ng-click="directionControllerCtrl.moveBack()">
         <i class="fi-arrow-down"></i>
       </div>
     </div>
